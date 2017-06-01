@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFDBDB"
+    android:orientation="vertical"
+    tools:context="com.myapplicationdev.android.p07_smsretriever.fragment_second">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Only SMS with this word"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    <EditText
+        android:id="@+id/etWord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvFrag2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/btnRetrive2"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="183dp"
+            android:layout_height="wrap_content"
+            android:text="Retrieve SMS"
+            android:layout_weight="0.81" />
+
+        <Button
+            android:id="@+id/btnSend"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="177dp"
+            android:layout_height="35dp"
+            android:background="@android:color/holo_blue_bright"
+            android:text="Share to Email"
+            android:layout_weight="0.19" />
+
+    </LinearLayout>
+
+</LinearLayout>
